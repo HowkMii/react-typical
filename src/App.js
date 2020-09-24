@@ -1,23 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
+import me from './me.jpg';
 import './App.css';
+import Typical from 'react-typical'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={me} className="App-logo" alt="" />
+        <h1>  Hi, I'm Abdelhakim </h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          
+          <Typical
+            loop={Infinity}
+            wrapper="b"
+            steps={[
+              'Developer',
+              1000,
+              'Designer',
+              1000,
+              'Freelancer',
+              1000,
+              'Student',
+              1000,
+
+
+
+
+
+              ]}
+
+          />
+
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
